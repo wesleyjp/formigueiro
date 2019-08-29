@@ -86,3 +86,33 @@ Objeto = function(x, y, w, h, r, p, m, g, color) {
 	}
 
 }
+
+Principal = function () {
+	this.width = 0;
+	this.height = 0;
+	this.radius = 10;
+	this.color = "yellow";
+	this.g = "x";
+	this.x = 100;
+	this.y = 100;
+	this.life = 1;
+	this.h = "g";
+
+	this.update = () => {
+		this.draw();
+	}
+
+	this.draw = () => {
+
+		ctx.beginPath();
+		ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false);
+		ctx.fillStyle = this.color;
+		ctx.fill();
+		ctx.closePath();
+
+
+		ctx.font = "18px Arial";
+		ctx.fillStyle = "Black";
+		ctx.fillText(this.g.toUpperCase(), this.x - 5, this.y + 5); //g.toUpperCase()
+	}
+}

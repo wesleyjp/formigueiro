@@ -12,6 +12,7 @@ canvas {
 	//background-image: url('../img/stars.png');
 	position: absolute;
 	z-index:5;
+  cursor: none;
 }
 
 /*Star Background*/
