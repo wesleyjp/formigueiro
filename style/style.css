@@ -9,7 +9,7 @@ body {
 
 canvas {
 	//background-color: #1C1C1C;
-	//background-image: url('../img/stars.png');
+	//background-image: url("../img/stars.png");
 	position: absolute;
 	z-index:5;
   cursor: none;
@@ -45,12 +45,12 @@ canvas {
 }
 
 .stars {
-  background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+  background:#000 url("../img/stars.png") repeat top center;
   z-index:0;
 }
 
 .twinkling{
-  background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
+  background:transparent url("../img/twinkling.png") repeat top center;
   z-index:1;
 
   -moz-animation:move-twink-back 200s linear infinite;

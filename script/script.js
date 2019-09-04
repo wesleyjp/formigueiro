@@ -101,9 +101,10 @@ for (i in data) {
 					} 
 				}
 
-				if (data[i].g == "x") { // Come o objeto
+				if (data[i].g == "x") {
 					data[o].life = 0;
 					character.radius++;
+					//alert(o); //bug aqui 	
 				}
 
 				if (data[i].h == "v") {data[o].h = "v"; data[o].color = "rgba(255, 255, 255, 1)";} // transmite contaminação do virus

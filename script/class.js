@@ -79,8 +79,7 @@ Objeto = function(x, y, w, h, r, p, m, g, color) {
 		ctx.fill();
 		ctx.closePath();
 
-
-		ctx.font = "18px Arial";
+		ctx.font = "15px Arial";
 		ctx.fillStyle = "white";
 		ctx.fillText(this.g.toUpperCase(), this.x - 5, this.y + 5); //g.toUpperCase()
 	}
